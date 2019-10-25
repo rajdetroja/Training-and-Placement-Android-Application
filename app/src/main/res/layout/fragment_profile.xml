@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout">
+
+
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/nav_menu_header_bg"
+                app:srcCompat="@drawable/nav_menu_header_bg" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:clickable="true"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FFFFFFFF"
+
+                android:id="@+id/profile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-130dp"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/man" />
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:background="#ebca0707"
+                android:elevation="4dp"
+                android:paddingBottom="24dp">
+
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:clickable="true"
+
+                    android:src="@android:drawable/ic_menu_edit" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_layout"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/emaill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="Email : "
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:id="@+id/dobl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="Date Of Birth: "
+                    android:textStyle="bold"
+                    android:layout_below="@+id/emaill"
+                    />
+                <TextView
+                    android:id="@+id/genderl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="Gender : "
+                    android:layout_below="@+id/dobl"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/categoryl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="Category :"
+                    android:layout_below="@+id/genderl"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/hometownl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="Hometown :"
+                    android:layout_below="@+id/categoryl"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/contactl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="Contact :"
+                    android:layout_below="@+id/hometownl"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/per_tenl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="10th Percentage :"
+                    android:layout_below="@+id/contactl"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/per_twel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="12th Percentage :"
+                    android:layout_below="@+id/per_tenl"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/cg_1l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="CGPA Sem 1 :"
+                    android:layout_below="@+id/per_twel"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/cg_2l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="CGPA Sem 2 :"
+                    android:layout_below="@+id/cg_1l"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/cg_3l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="CGPA Sem 3 :"
+                    android:layout_below="@+id/cg_2l"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/cg_4l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="CGPA Sem 4 :"
+                    android:layout_below="@+id/cg_3l"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/cg_5l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="CGPA Sem 4 :"
+                    android:layout_below="@+id/cg_4l"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/cg_6l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:text="CGPA Sem 6 :"
+                    android:layout_below="@+id/cg_5l"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/emaill"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dobl"
+                    android:layout_below="@+id/email"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/genderl"
+                    android:layout_below="@+id/dob"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/categoryl"
+                    android:layout_below="@+id/gender"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/hometown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/hometownl"
+                    android:layout_below="@+id/category"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/hometown"
+                    android:layout_toRightOf="@+id/contactl"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/per_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/contact"
+                    android:layout_toRightOf="@+id/per_tenl"
+                    android:clickable="true"/>
+
+
+                <TextView
+                    android:id="@+id/per_twe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/per_ten"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/per_twel"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/cg_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/per_twe"
+                    android:layout_toRightOf="@+id/cg_1l"
+                    android:clickable="true" />
+                <TextView
+                    android:id="@+id/cg_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/cg_1"
+                    android:layout_toRightOf="@+id/cg_2l"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/cg_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/cg_2"
+                    android:layout_toRightOf="@+id/cg_3l"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/cg_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/cg_3"
+                    android:layout_toRightOf="@+id/cg_4l"
+                    android:clickable="true" />
+                <TextView
+                    android:id="@+id/cg_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/cg_4"
+                    android:layout_toRightOf="@+id/cg_5l"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/cg_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/cg_5"
+                    android:layout_toRightOf="@+id/cg_6l"
+                    android:clickable="true"/>
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
+

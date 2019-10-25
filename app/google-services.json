@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "840788125810",
+    "firebase_url": "https://tnpcell-ec07b.firebaseio.com",
+    "project_id": "tnpcell-ec07b",
+    "storage_bucket": "tnpcell-ec07b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840788125810:android:ac01c4c1ac5911ef",
+        "android_client_info": {
+          "package_name": "com.example.tnpcell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840788125810-e3eiac2ufpgn28hu7fkm98feofv905p8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tnpcell",
+            "certificate_hash": "e32cb05edd4d5c4d130377a50f3d14abbd945d3f"
+          }
+        },
+        {
+          "client_id": "840788125810-g0poc7186nnc3r1k3q0m127q2e26pvge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYY8pgMCR-piqh2lOzPsOgOyMVv6m7O_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840788125810-g0poc7186nnc3r1k3q0m127q2e26pvge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

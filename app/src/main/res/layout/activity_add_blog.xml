@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBlog"
+    android:orientation="vertical">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:id="@+id/scrol">
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                >
+
+                <EditText
+                    android:id="@+id/company"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Company Name"
+                    android:inputType="text"
+                    />
+
+                <EditText
+                    android:id="@+id/author"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Author"
+                    android:inputType="text"
+                    android:layout_below="@+id/company"
+                    />
+
+                <EditText
+                    android:id="@+id/role"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Intership/Full Time"
+                    android:inputType="text"
+                    android:layout_below="@+id/author"/>
+
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Year"
+                    android:inputType="number"
+                    android:layout_below="@id/role"/>
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Desciption"
+                    android:inputType="text"
+                    android:layout_below="@id/year"/>
+                <Button
+                    android:id="@+id/ok"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:layout_below="@+id/description"
+                    />
+
+                <Button
+                    android:id="@+id/discard"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ok"
+                    android:layout_below="@id/description"
+                    android:text="Discard"
+                    />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

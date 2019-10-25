@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:background="@drawable/blogrectangle">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Name :: "
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textSize="14dp"
+        android:id="@+id/cnn"/>
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="company"
+        android:paddingTop="20dp"
+        android:layout_toRightOf="@+id/cnn"
+        android:layout_centerHorizontal="true"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author Of Post :: "
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:textSize="14dp"
+        android:layout_below="@+id/cnn"
+        android:id="@+id/cpost"/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="author"
+        android:layout_toRightOf="@+id/cpost"
+        android:layout_below="@+id/company"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile :: "
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:textSize="14dp"
+        android:layout_below="@+id/cpost"
+        android:id="@+id/cp"/>
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:paddingLeft="20dp"
+        android:text="role"
+        android:layout_toRightOf="@+id/cp"
+        android:layout_below="@+id/cpost"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year :: "
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:textSize="14dp"
+        android:layout_below="@+id/cp"
+        android:id="@+id/yy"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="year"
+        android:layout_toRightOf="@id/yy"
+        android:layout_below="@+id/role"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience :: "
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:textSize="14dp"
+        android:layout_below="@+id/yy"
+        android:id="@+id/ex"/>
+    <TextView
+        android:id="@+id/discription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="discription"
+        android:layout_below="@+id/year"
+        android:layout_toRightOf="@+id/ex"
+        android:paddingBottom="8dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeblog"
+        android:layout_below="@+id/discription"
+        android:text="Remove"
+        android:visibility="gone"/>
+
+</RelativeLayout>
